@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abigail Rector-Jones - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="#" class="logo"><span>Abigail Rector-Jones</span></a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#timeline">Timeline</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <a href="https://github.com/ARJ3603">
+        <button class="visit-btn">Visit Github</button>
+      </a>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="pictureOfMe.jpg" alt="Abigail Rector-Jones smiling at her desk" />
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Abigail Rector-Jones</h1>
+                    <span>Frontend Developer</span>
+                </div>
+
+                <div class="btn-group">
+                    <div class="btn">Download CV</div>
+                    <div class="btn">Contact</div>
+                </div>
+
+                <div class="socials">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="experience" id="experience">
+
+      <h2 class="section-title">Experience</h2>
+
+      <div class="experience-info">
+
+        <div class="grid">
+          <div class="grid-card">
+            <i class="fa-solid fa-code"></i>
+            <span>Frontend Development</span>
+            <h3>1 Year</h3>
+          </div>
+        </div>
+
+          <div class="grid">
+          <div class="grid-card">
+            <i class="fa-solid fa-code"></i>
+            <span>Backend Development and Databases</span>
+            <h3>1 Year</h3>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+            <div class="flex border-b border-gray-200 mb-6 flex-wrap justify-center">
+                <button class="tab-button py-2 px-4 text-lg font-medium text-gray-600 hover:text-blue-600 hover:border-blue-600 border-b-2 border-transparent transition-colors duration-300 active-tab-btn" data-tab-target="programming-languages">Programming Languages</button>
+                <button class="tab-button py-2 px-4 text-lg font-medium text-gray-600 hover:text-blue-600 hover:border-blue-600 border-b-2 border-transparent transition-colors duration-300" data-tab-target="frameworks">Frameworks</button>
+                <button class="tab-button py-2 px-4 text-lg font-medium text-gray-600 hover:text-blue-600 hover:border-blue-600 border-b-2 border-transparent transition-colors duration-300" data-tab-target="tools">Tools</button>
+            </div>
+
+            <div id="programming-languages" class="tab-content active-tab-content">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-500">Programming Languages</h3>
+                <ul class="list-none text-lg text-gray-700 space-y-4">
+                    <li>
+                        <div class="flex justify-between items-center mb-1">
+                            <span>JavaScript (ES6+)</span><span class="font-semibold text-pink-500">80%</span>
+                        </div>
+                        <div class="skill-bar-container bg-gray-200 rounded-full h-3">
+                            <div class="skill-bar-fill" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between items-center mb-1">
+                            <span>Python</span><span class="font-semibold text-pink-500">75%</span>
+                        </div>
+                        <div class="skill-bar-container bg-gray-200 rounded-full h-3">
+                            <div class="skill-bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="frameworks" class="tab-content hidden">
+                <h3 class="text-2xl font-semibold mb-4 text-pink-500">Frameworks</h3>
+                <ul class="list-none text-lg text-gray-700 space-y-4">
+                    <li>
+                        <div class="flex justify-between items-center mb-1">
+                            <span>Node.js (Express)</span><span class="font-semibold text-blue-500">90%</span>
+                        </div>
+                        <div class="skill-bar-container bg-gray-200 rounded-full h-3">
+                            <div class="skill-bar-fill" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between items-center mb-1">
+                            <span>Tailwind CSS</span><span class="font-semibold text-blue-500">75%</span>
+                        </div>
+                        <div class="skill-bar-container bg-gray-200 rounded-full h-3">
+                            <div class="skill-bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="tools" class="tab-content hidden">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-500">Tools</h3>
+                <ul class="list-none text-lg text-gray-700 space-y-4">
+                    <li>
+                        <div class="flex justify-between items-center mb-1">
+                            <span>Git & GitHub</span><span class="font-semibold text-pink-500">70%</span>
+                        </div>
+                        <div class="skill-bar-container bg-gray-200 rounded-full h-3">
+                            <div class="skill-bar-fill" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between items-center mb-1">
+                            <span>VS Code</span><span class="font-semibold text-pink-500">95%</span>
+                        </div>
+                        <div class="skill-bar-container bg-gray-200 rounded-full h-3">
+                            <div class="skill-bar-fill" style="width: 95%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between items-center mb-1">
+                            <span>Postman</span><span class="font-semibold text-pink-500">70%</span>
+                        </div>
+                        <div class="skill-bar-container bg-gray-200 rounded-full h-3">
+                            <div class="skill-bar-fill" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between items-center mb-1">
+                            <span>MongoDB Compass</span><span class="font-semibold text-pink-500">75%</span>
+                        </div>
+                        <div class="skill-bar-container bg-gray-200 rounded-full h-3">
+                            <div class="skill-bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline" id="timeline">
+        <h2 class="section-title">Project Timeline</h2>
+        <div class="max-w-4xl mx-auto relative border-l-2 border-blue-600 pl-8" id="timeline-container">
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="section-title">Recent Projects</h2>
+      <div class="projects-grid" id="projects-grid">
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+      <h2 class="section-title">Contact Me</h2>
+
+      <form id="contact-form" class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100 space-y-6">
+        <div>
+          <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Name:</label>
+          <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700" placeholder="Your Name">
+          <div id="name-error" class="text-red-500 text-sm mt-1 hidden">Name cannot be empty.</div>
+        </div>
+
+        <div>
+          <label for="email" class="block text-lg font-medium text-gray-700 mb-2">Email:</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700" placeholder="your.email@example.com">
+          <div id="email-error" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.</div>
+        </div>
+
+        <div>
+          <label for="message" class="block text-lg font-medium text-gray-700 mb-2">Message:</label>
+          <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700" placeholder="Your message..."></textarea>
+          <div id="message-error" class="text-red-500 text-sm mt-1 hidden">Message cannot be empty.</div>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-pink-600 transition-colors duration-300 shadow-md">Send Message</button>
+        <div id="success-message" class="text-green-600 text-center mt-3 hidden">Your message has been sent successfully!</div>
+      </form>
+
+    </section>
+
+    <footer>
+
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#timeline">Timeline</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <p class="copyright">© All Rights Reserved | Abigail Rector-Jones</p>
+
+    </footer>
+
+    <div id="project-details-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-xl shadow-2xl p-6 w-full max-w-md relative border border-gray-200">
+            <button class="close-modal-btn absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
+
+            <div id="modal-text-content">
+                <h3 id="modal-title" class="text-3xl font-bold text-blue-600 mb-4"></h3>
+                <p id="modal-duration" class="text-gray-600 text-sm mb-2"></p>
+                <p id="modal-description" class="text-gray-700 mb-4 leading-relaxed"></p>
+                <div class="btn-group flex gap-3 justify-end">
+                    <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="btn bg-gray-800 text-white hover:bg-black px-4 py-2 rounded-lg transition-colors">Github Repo</a>
+                    <a id="modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="btn bg-pink-500 text-white hover:bg-pink-600 px-4 py-2 rounded-lg transition-colors">Live Demo</a>
+                </div>
+            </div>
+
+            <div id="modal-carousel-content" class="hidden">
+                <h3 id="modal-carousel-title" class="text-3xl font-bold text-blue-600 mb-4 text-center"></h3>
+                <div class="modal-carousel-slides-container relative w-full aspect-video mb-4 rounded-lg overflow-hidden">
+                    <img id="modal-carousel-image" src="" alt="Project image" class="w-full h-full object-contain bg-black rounded-lg">
+                    <button id="modal-carousel-prev" class="modal-carousel-nav-btn left-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+                    <button id="modal-carousel-next" class="modal-carousel-nav-btn right-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
