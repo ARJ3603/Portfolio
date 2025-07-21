@@ -9,24 +9,24 @@ const portfolioProjects = [
         githubRepo: 'https://github.com/RossignolD/logicRogue',
         timelineIcon: 'fa-solid fa-gamepad',
         carouselImages: [
-            'emporiumhome.png',
-            'emporiumfilter.png',
-            'emporiumsearch.png'
+            'gamescreen.png',
+            'dialoguescreen.png',
+            'encounterscreen.png'
         ]
     },
     {
         id: 'bookemporium',
         title: 'Book Emporium Webpage',
-        cardDescription: 'Built a dynamic e-commerce front-end demo with product search and sorting.',
+        cardDescription: 'Built a dynamic e-commerce front-end demo with product search, sorting and cart functionalities.',
         duration: 'Mar 31st, 2025',
-        detailedDescription: 'Engineered a responsive single-page shopping application from scratch, showcasing a list of products with advanced search, sorting, and category filtering functionalities. Implemented dynamic content manipulation using JavaScript, ensuring a smooth and interactive user experience across various devices. Styled with Tailwind CSS for a modern aesthetic.',
+        detailedDescription: 'Engineered a responsive single-page shopping application from scratch, showcasing a list of products with advanced search, sorting, category filtering, and shopping cart functionalities. Implemented dynamic content manipulation using JavaScript, ensuring a smooth and interactive user experience across various devices.',
         liveDemo: 'https://arj3603.github.io/Book-Emporium/',
         githubRepo: 'https://github.com/ARJ3603/Book-Emporium',
         timelineIcon: 'fa-solid fa-book',
         carouselImages: [
-            'shoppingpage.png',
-            'shoppingsearch.png',
-            'shoppingcategory.png'
+            'emporiumhome.png',
+            'emporiumfilter.png',
+            'emporiumsearch.png'
         ]
     },
     {
