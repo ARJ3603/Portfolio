@@ -75,62 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initializeCarousels();
 
-    const contactForm = document.getElementById('contact-form');
-    const nameInput = document.getElementById('name');
-    const emailInput = document.getElementById('email');
-    const messageTextarea = document.getElementById('message');
-    const nameError = document.getElementById('name-error');
-    const emailError = document.getElementById('email-error');
-    const messageError = document.getElementById('message-error');
-    const successMessage = document.getElementById('success-message');
-
-    function isValidEmail(email) {
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return regex.test(email);
-    }
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            let isValid = true;
-
-            nameError.classList.add('hidden');
-            emailError.classList.add('hidden');
-            messageError.classList.add('hidden');
-            successMessage.classList.add('hidden');
-
-            if (nameInput.value.trim() === '') {
-                nameError.classList.remove('hidden');
-                isValid = false;
-            }
-
-            if (emailInput.value.trim() === '') {
-                emailError.textContent = 'Email cannot be empty.';
-                emailError.classList.remove('hidden');
-                isValid = false;
-            } else if (!isValidEmail(emailInput.value.trim())) {
-                emailError.textContent = 'Please enter a valid email address.';
-                emailError.classList.remove('hidden');
-                isValid = false;
-            }
-
-            if (messageTextarea.value.trim() === '') {
-                messageError.classList.remove('hidden');
-                isValid = false;
-            }
-
-            if (isValid) {
-                successMessage.classList.remove('hidden');
-                contactForm.reset();
-                console.log('Form submitted successfully!', {
-                    name: nameInput.value.trim(),
-                    email: emailInput.value.trim(),
-                    message: messageTextarea.value.trim()
-                });
-            }
-        });
-    }
-
     const downloadCvBtn = document.getElementById('downloadCvBtn');
     if (downloadCvBtn) {
         downloadCvBtn.addEventListener('click', () => {
@@ -144,6 +88,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 a.click();
                 document.body.removeChild(a);
             });
+        });
+    }
+
+    const contactBtn = document.getElementById('contactBtn');
+    if (contactBtn) {
+        contactBtn.addEventListener('click', () => {
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     }
 
