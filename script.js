@@ -130,6 +130,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    const downloadCvBtn = document.getElementById('downloadCvBtn');
+    if (downloadCvBtn) {
+        downloadCvBtn.addEventListener('click', () => {
+            const cvFiles = ['CV1.png', 'CV2.png'];
+
+            cvFiles.forEach((fileName, index) => {
+                const a = document.createElement('a');
+                a.href = fileName;
+                a.download = `Abigail_Rector_Jones_CV_Page${index + 1}.png`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+        });
+    }
+
 });
 
 
