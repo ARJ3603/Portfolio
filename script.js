@@ -9,9 +9,9 @@ const portfolioProjects = [
         githubRepo: 'https://github.com/RossignolD/logicRogue',
         timelineIcon: 'fa-solid fa-gamepad',
         carouselImages: [
-            'gamescreen.png',
-            'dialoguescreen.png',
-            'encounterscreen.png'
+            'emporiumhome.png',
+            'emporiumfilter.png',
+            'emporiumsearch.png'
         ]
     },
     {

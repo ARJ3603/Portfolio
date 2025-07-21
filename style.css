@@ -399,11 +399,10 @@
     transition: opacity 0.3s ease-in-out;
 }
 #project-details-modal > div {
-    /* Updated for larger modal size */
-    max-width: 90vw; /* Takes up most of the viewport width */
-    width: 90%; /* Responsive width */
-    max-height: 90vh; /* Takes up most of the viewport height */
-    overflow-y: auto; /* Enable scrolling if content exceeds height */
+    max-width: 90vw; 
+    width: 90%; 
+    max-height: 90vh; 
+    overflow-y: auto; 
     animation: fadeInScale 0.3s ease-out forwards;
 }
 @keyframes fadeInScale {
@@ -525,7 +524,7 @@
         width: 50vw;
     }
     #project-details-modal > div {
-        max-width: 95vw; /* Even larger on smaller screens */
+        max-width: 95vw; 
         width: 95%;
     }
   }
