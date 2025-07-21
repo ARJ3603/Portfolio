@@ -30,11 +30,11 @@ const portfolioProjects = [
         ]
     },
     {
-        id: 'tinysearchengine',
-        title: 'Tiny Web Search Engine',
-        cardDescription: 'Implemented core search engine components in Node.js with a CLI.',
-        duration: 'Mar 14th, 2025',
-        detailedDescription: 'Developed a basic web search engine with core components including an inverted search index, keyword extraction with stop word filtering, and a union-based search algorithm. Provided a command-line interface (CLI) for user interaction and tested components with a simple testing framework. Focused on fundamental data structures and algorithms for information retrieval.',
+        id: 'futureProject',
+        title: 'Future Project',
+        cardDescription: 'A project I plan to complete in the future',
+        duration: 'Aug 1st, 2025',
+        detailedDescription: 'An Undetermined future project plan that I plan to make out of personal interest and drive',
         liveDemo: '#',
         githubRepo: 'https://github.com/ARJ3603/tiny-web-search-engine-cli',
         timelineIcon: 'fa-solid fa-magnifying-glass',
